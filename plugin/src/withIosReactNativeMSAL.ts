@@ -51,7 +51,7 @@ function setAppDelegate(appDelegate: string) {
     return appDelegate;
   }
 
-  const linkingMethodReturn = 'return [RCTLinkingManager application:application openURL:url options:options];';
+  const linkingMethodReturn = 'return [super application:application openURL:url options:options] || [RCTLinkingManager application:application openURL:url options:options];';
   const newReturn = `if ([MSALPublicClientApplication handleMSALResponse:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]]) {
     return true;
   }
