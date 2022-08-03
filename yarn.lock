@@ -1432,7 +1432,7 @@
     xcode "^3.0.1"
     xml2js "^0.4.23"
 
-"@expo/config-plugins@4.0.16", "@expo/config-plugins@^4.0.6":
+"@expo/config-plugins@4.0.16":
   version "4.0.16"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-4.0.16.tgz#832fb533245180c6dfd82fd359474f68a8e857b2"
   integrity sha512-UTyE5JTBatMSwoOZCtX0u2H3zkp/ybMftc1228ARMop35Dbq+sYO11Ym3MrY5RPh8PYPofokDSOvoUq1jjORXw==
@@ -1454,6 +1454,27 @@
     xcode "^3.0.1"
     xml2js "0.4.23"
 
+"@expo/config-plugins@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-5.0.0.tgz#19f699aafa5809756b9be055189a14842f8da7ae"
+  integrity sha512-Bgjgv64f/XqpXXKPAoGhc5dbmuJB8eOBkhV6FMI/RMP06HfL7EQvXgcBBoJThLAZVyd29XikFgaCvABt/NavxQ==
+  dependencies:
+    "@expo/config-types" "^46.0.0"
+    "@expo/json-file" "8.2.36"
+    "@expo/plist" "0.0.18"
+    "@expo/sdk-runtime-versions" "^1.0.0"
+    "@react-native/normalize-color" "^2.0.0"
+    chalk "^4.1.2"
+    debug "^4.3.1"
+    find-up "~5.0.0"
+    getenv "^1.0.0"
+    glob "7.1.6"
+    resolve-from "^5.0.0"
+    semver "^7.3.5"
+    slash "^3.0.0"
+    xcode "^3.0.1"
+    xml2js "0.4.23"
+
 "@expo/config-types@^40.0.0-beta.2":
   version "40.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@expo/config-types/-/config-types-40.0.0-beta.2.tgz#4fea4ef5654d02218b02b0b3772529a9ce5b0471"
@@ -1463,6 +1484,11 @@
   version "43.0.1"
   resolved "https://registry.yarnpkg.com/@expo/config-types/-/config-types-43.0.1.tgz#3e047dccb371741a540980eaff26fb0c95039c30"
   integrity sha512-EtllpCGDdB/UdwAIs5YXJwBLpbFQNdlLLrxIvoILA9cXrpQMWkeDCT9lQPJzFRMFcLUaMuGvkzX2tR4tx5EQFQ==
+
+"@expo/config-types@^46.0.0":
+  version "46.0.1"
+  resolved "https://registry.yarnpkg.com/@expo/config-types/-/config-types-46.0.1.tgz#ba5d6197222039de13aefdf0171d24b027781cd0"
+  integrity sha512-LQWGDagQ0YXGSJyLomNDZrYXj/cUP+wczs9y2M8MB9UDoSU6dbLRMiSX0FMhhKKdxBK0p92VQxZyqOzGpIYfSw==
 
 "@expo/config@^3.2.3":
   version "3.3.43"
@@ -1551,6 +1577,15 @@
     json5 "^1.0.1"
     write-file-atomic "^2.3.0"
 
+"@expo/json-file@8.2.36":
+  version "8.2.36"
+  resolved "https://registry.yarnpkg.com/@expo/json-file/-/json-file-8.2.36.tgz#62a505cb7f30a34d097386476794680a3f7385ff"
+  integrity sha512-tOZfTiIFA5KmMpdW9KF7bc6CFiGjb0xnbieJhTGlHrLL+ps2G0OkqmuZ3pFEXBOMnJYUVpnSy++52LFxvpa5ZQ==
+  dependencies:
+    "@babel/code-frame" "~7.10.4"
+    json5 "^1.0.1"
+    write-file-atomic "^2.3.0"
+
 "@expo/npm-proofread@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@expo/npm-proofread/-/npm-proofread-1.0.1.tgz#8450f71cea47dd9864d61a1a105931dc7ea2209a"
@@ -1571,6 +1606,15 @@
   version "0.0.17"
   resolved "https://registry.yarnpkg.com/@expo/plist/-/plist-0.0.17.tgz#0f6c594e116f45a28f5ed20998dadb5f3429f88b"
   integrity sha512-5Ul3d/YOYE6mfum0jCE25XUnkKHZ5vGlU/X2275ZmCtGrpRn1Fl8Nq+jQKSaks3NqTfxdyXROi/TgH8Zxeg2wg==
+  dependencies:
+    "@xmldom/xmldom" "~0.7.0"
+    base64-js "^1.2.3"
+    xmlbuilder "^14.0.0"
+
+"@expo/plist@0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@expo/plist/-/plist-0.0.18.tgz#9abcde78df703a88f6d9fa1a557ee2f045d178b0"
+  integrity sha512-+48gRqUiz65R21CZ/IXa7RNBXgAI/uPSdvJqoN9x1hfL44DNbUoWHgHiEXTx7XelcATpDwNTz6sHLfy0iNqf+w==
   dependencies:
     "@xmldom/xmldom" "~0.7.0"
     base64-js "^1.2.3"
