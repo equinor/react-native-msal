@@ -28,12 +28,11 @@ const withIosKeychainGroup = (config) => {
 };
 const withAppDelegateConfig = (config) => {
     return (0, config_plugins_1.withAppDelegate)(config, (mod) => {
-        if (mod.modResults.language === 'objc') {
-            mod.modResults.contents = setAppDelegate(mod.modResults.contents);
-        }
-        else {
-            throw new Error('Cannot modify AppDelegate because it is not in objective-c');
-        }
+        // if (mod.modResults.language === 'objc') {
+        mod.modResults.contents = setAppDelegate(mod.modResults.contents);
+        // } else {
+        //   throw new Error('Cannot modify AppDelegate because it is not in objective-c');
+        // }
         return mod;
     });
 };
