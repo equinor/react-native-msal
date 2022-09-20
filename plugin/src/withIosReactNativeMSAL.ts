@@ -29,11 +29,11 @@ const withIosKeychainGroup: ConfigPlugin = (config) => {
 
 const withAppDelegateConfig: ConfigPlugin = (config) => {
   return withAppDelegate(config, (mod) => {
-    if (mod.modResults.language === 'objc') {
-      mod.modResults.contents = setAppDelegate(mod.modResults.contents);
-    } else {
-      throw new Error('Cannot modify AppDelegate because it is not in objective-c');
-    }
+    // if (mod.modResults.language === 'objc') {
+    mod.modResults.contents = setAppDelegate(mod.modResults.contents);
+    // } else {
+    //   throw new Error('Cannot modify AppDelegate because it is not in objective-c');
+    // }
     return mod;
   });
 };
@@ -51,7 +51,8 @@ function setAppDelegate(appDelegate: string) {
     return appDelegate;
   }
 
-  const linkingMethodReturn = 'return [super application:application openURL:url options:options] || [RCTLinkingManager application:application openURL:url options:options];';
+  const linkingMethodReturn =
+    'return [super application:application openURL:url options:options] || [RCTLinkingManager application:application openURL:url options:options];';
   const newReturn = `if ([MSALPublicClientApplication handleMSALResponse:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]]) {
     return true;
   }
