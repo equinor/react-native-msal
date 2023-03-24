@@ -303,7 +303,7 @@ PODS:
   - React-jsinspector (0.68.6)
   - React-logger (0.68.6):
     - glog
-  - react-native-msal (1.0.3):
+  - react-native-msal (1.0.4):
     - MSAL
     - React-Core
   - React-perflogger (0.68.6)
@@ -528,7 +528,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
-  DoubleConversion: 831926d9b8bf8166fd87886c4abab286c2422662
+  DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: 74b042924fe14da854ac4e87cefc417f583b22b1
   FBReactNativeSpec: cc0037b9914b9b1d92a15f179bc3e2e2c7cc0c6f
   Flipper: 26fc4b7382499f1281eb8cb921e5c3ad6de91fe0
@@ -541,7 +541,7 @@ SPEC CHECKSUMS:
   Flipper-RSocket: d9d9ade67cbecf6ac10730304bf5607266dd2541
   FlipperKit: cbdee19bdd4e7f05472a66ce290f1b729ba3cb86
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
-  glog: 476ee3e89abb49e07f822b48323c51c57124b572
+  glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
   hermes-engine: 84e3af1ea01dd7351ac5d8689cbbea1f9903ffc3
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   MSAL: 5149daaa19228c2c27d81987634da15b50981cef
@@ -560,7 +560,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: b4ce4afc5dd9c8fdd2ac59049ccf420f288ecef7
   React-jsinspector: e396d5e56af08fce39f50571726b68a40f1e302d
   React-logger: cec52b3f8fb0be0d47b2cb75dec69de60f2de3b6
-  react-native-msal: d3a751c3706d3542db65179515b5945ba9e49ec8
+  react-native-msal: acaa05700696b96a5b1ddee6de6402eede387779
   React-perflogger: 46620fc6d1c3157b60ed28434e08f7fd7f3f3353
   React-RCTActionSheet: b1f7e72a0ba760ec684df335c61f730b5179f5ff
   React-RCTAnimation: d73b62d42867ab608dfb10e100d8b91106275b18
@@ -579,4 +579,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 74f89a11adc1882568a3ec8ba948a2fe31dc4464
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.11.2
