@@ -1,6 +1,6 @@
 {
   "name": "react-native-msal",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Native wrapper for iOS and Android",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -41,7 +41,7 @@
   "homepage": "https://github.com/stashenergy/react-native-msal#readme",
   "dependencies": {
     "@azure/msal-browser": "^2.3.4",
-    "@expo/config-plugins": "^5.0.2"
+    "@expo/config-plugins": "~6.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
