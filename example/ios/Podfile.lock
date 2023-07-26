@@ -303,7 +303,7 @@ PODS:
   - React-jsinspector (0.68.6)
   - React-logger (0.68.6):
     - glog
-  - react-native-msal (1.0.5):
+  - react-native-msal (1.0.6):
     - MSAL
     - React-Core
   - React-perflogger (0.68.6)
@@ -560,7 +560,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: b4ce4afc5dd9c8fdd2ac59049ccf420f288ecef7
   React-jsinspector: e396d5e56af08fce39f50571726b68a40f1e302d
   React-logger: cec52b3f8fb0be0d47b2cb75dec69de60f2de3b6
-  react-native-msal: 2d4a3df96ac6fd17bbebfad42424cb03acc38ff5
+  react-native-msal: 05be6835c7cb710ca60b5f44c3b33c52c48d2f47
   React-perflogger: 46620fc6d1c3157b60ed28434e08f7fd7f3f3353
   React-RCTActionSheet: b1f7e72a0ba760ec684df335c61f730b5179f5ff
   React-RCTAnimation: d73b62d42867ab608dfb10e100d8b91106275b18
