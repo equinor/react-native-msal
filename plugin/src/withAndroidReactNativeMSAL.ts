@@ -26,7 +26,7 @@ function setBrowserTabActivity(
   const mainApplication = getMainApplicationOrThrow(androidManifest);
   let activity = mainApplication.activity?.find((a) => a.$['android:name'] === BROWSER_TAB_ACTIVITY_NAME);
   if (!activity) {
-    activity = { $: { 'android:name': BROWSER_TAB_ACTIVITY_NAME } };
+    activity = { $: { 'android:name': BROWSER_TAB_ACTIVITY_NAME, 'android:exported': 'false'  } };
     mainApplication.activity = [...(mainApplication.activity ?? []), activity];
   }
   activity['intent-filter'] = [
