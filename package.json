@@ -10,6 +10,7 @@
     "clean": "expo-module clean",
     "expo-module": "expo-module",
     "lint": "expo-module lint",
+    "prepare": "expo-module prepare && husky install",
     "prepublishOnly": "expo-module prepublishOnly",
     "test": "expo-module test",
     "example": "yarn --cwd example",
