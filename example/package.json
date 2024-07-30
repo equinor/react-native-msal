@@ -7,20 +7,21 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "web": "expo start:web",
-    "build:web": "expo build:web"
+    "web": "npx expo start --web",
+    "build:web": "npx expo export:web"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-native": "^0.71.0",
-    "react-native-web": "^0.17.1"
+    "@expo/metro-runtime": "^3.2.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/runtime": "^7.14.0",
-    "babel-plugin-module-resolver": "^5.0.0",
-    "babel-preset-expo": "^9.0.2"
+    "@babel/core": "~7.9.0",
+    "@babel/runtime": "^7.25.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "babel-preset-expo": "8.3.0"
   },
   "packageManager": "yarn@4.3.1"
 }
