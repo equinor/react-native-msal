@@ -10,6 +10,7 @@
     "clean": "expo-module clean",
     "expo-module": "expo-module",
     "lint": "expo-module lint",
+    "prepack": "yarn build && expo-module prepare && husky install",
     "prepare": "expo-module prepare && husky install",
     "prepublishOnly": "expo-module prepublishOnly",
     "test": "expo-module test",
