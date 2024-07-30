@@ -20,7 +20,6 @@
 - [Use](#use)
   - [PublicClientApplication class](#publicClientApplication-class)
   - [B2C Applications](#b2c-applications)
-- [Example app](#example-app)
 - [Migrating between major versions](#migrating-between-major-versions)
 
 ## Install
@@ -102,28 +101,6 @@ const success: boolean = await pca.signOut(params);
 ### B2C Applications
 
 The `PublicClientApplication` class is a bit too bare bones for dealing with a B2C application, and you will need to write a bit of code to get the desired behavior.
-
-To address this issue, the example app that is included in this repository includes a [`B2CClient` class](./example/src/b2cClient.ts) which contains a lot of the functionality you will need for a B2C app. You can copy this class right into your own React Native app and modify it to your liking. You can see it being used in the example's [`App.tsx`](./example/src/App.tsx)
-
-If you would like to see this class included in the library itself, please let us know.
-
-## Example App
-
-As mentioned above, the example app demonstrates a B2C implementation
-
-To run the example locally, first clone the repo and run `$ yarn` to bootstrap the project. Then run the following for the desired platform:
-
-iOS: `$ yarn example ios`
-Android: `$ yarn example android`
-Web: `$ yarn example web` (the example app is also running live [here](https://stashenergy.github.io/react-native-msal/))
-
-If you want to run the example using your own Azure application information:
-
-1. Register the redirect URLs in your tenant:
-   - Android: `msauth://com.example/Xo8WBi6jzSxKDVR4drqm84yr9iU%3D`
-   - iOS: `msauth.com.example://auth`
-   - Web (SPA): `http://localhost:19006`
-1. Update the `b2cConfig` and `b2cScopes` variables in `msalConfig.ts` with your details.
 
 ## Migrating between major versions
 
